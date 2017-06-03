@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Camera app</title>
+    <script type="text/javascript">
+        window.config = {
+            instance: 'https://login.microsoftonline.com/',
+            tenant: 'jaxmine.onmicrosoft.com',
+            clientId: '2fc2c948-0e45-45cf-aa3b-beae80b531c1',
+            postLogoutRedirectUri: window.location.origin,
+            //cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost.
+            apiBase: "https://dcbpdlapi.azurewebsites.net"
+            //apiBase: "https://localhost:44338"
+
+        };
+    </script>
+</head>
+<body>
+    <div id="app-root"></div>
+    <script type="text/javascript" src="static/adal.js"></script>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>
